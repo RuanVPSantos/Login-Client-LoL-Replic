@@ -33,18 +33,18 @@ main {
   padding: clamp(35px, 8%, 70px);
 }
 
-.login__logo {
+.logo {
   width: 130px;
   margin-bottom: 80px;
 }
 
-.login__title {
+.titulo {
   color: var(--deep-grey);
   font-size: 1.5em;
   margin-bottom: 30px;
 }
 
-.login__label {
+.label {
   width: 100%;
   display: block;
   margin-bottom: 20px;
@@ -63,7 +63,7 @@ main {
   border: 2px solid rgba(255,255,255,0);
 }
 
-.login__label span {
+.label span {
   position: absolute;
   font-size: 0.8em;
   font-weight: 700;
@@ -79,24 +79,24 @@ main {
   border: 2px solid var(--deep-grey);
 }
 
-.login__label .span-active {
+.label .span-active {
   font-size: 0.7em;
   margin: 8px 10px;
   transition: 0.2s ease-in-out;
 }
 
-.login__icons {
+.icones {
   display: flex;
   gap: 10px;
   width: 100%;
   margin-top: 20px;
 }
 
-.login__icons img {
+.icones img {
   width: 20px;
 }
 
-.icons__button {
+.iconesDeBotoes {
   width: 33.33%;
   display: flex;
   align-items: center;
@@ -107,19 +107,19 @@ main {
   border: none;
 }
 
-.login__icons .icons__button:nth-child(1) {
+.icones .iconesDeBotoes:nth-child(1) {
   background-color: var(--blue);
 }
 
-.login__icons .icons__button:nth-child(2) {
+.icones .iconesDeBotoes:nth-child(2) {
   background-color: var(--light-grey);
 }
 
-.login__icons .icons__button:nth-child(3) {
+.icones .iconesDeBotoes:nth-child(3) {
   background-color: var(--deep-grey);
 }
 
-.login__label--checkbox {
+.label--checkbox {
   width: 100%;
   margin: 15px 0px 50px;
   font-size: 0.9em;
@@ -151,7 +151,7 @@ main {
   margin: 2px 6px;
 }
 
-.login__button{
+.botaoDeLogin{
   width: 60px;
   height: 60px;
   padding: 20px;
@@ -165,21 +165,21 @@ main {
   margin-bottom: 60px;
 }
 
-.login__button svg {
+.botaoDeLogin svg {
   fill: var(--white);
 }
 
-.login__button:disabled {
+.botaoDeLogin:disabled {
   cursor: auto;
   background-color: var(--white);
   border: 2px solid var(--light-grey);
 }
 
-.login__button:disabled svg {
+.botaoDeLogin:disabled svg {
   fill: var(--grey);
 }
 
-.login__link {
+.link {
   font-size: 0.8em;
   text-decoration: none;
   color: var(--medium-grey);

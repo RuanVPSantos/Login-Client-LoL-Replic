@@ -1,19 +1,19 @@
 const inputs = document.querySelectorAll(".input")
-const button = document.querySelector('.login__button')
+const button = document.querySelector('.botaoDeLogin')
 
-const handleFocus = ({target}) => {
+const focando = ({target}) => {
   const span = target.previousElementSibling;
   span.classList.add("span-active");
 }
 
-const handleOutFocus = ({target}) => {
+const retirandoFoco = ({target}) => {
   const span = target.previousElementSibling;
   if (target.value === "") {
     span.classList.remove("span-active");
   }
 }
 
-const handleChange = () =>
+const valoresAtendidos = () =>
 {
   const [username, password] = inputs;
 
@@ -25,6 +25,6 @@ const handleChange = () =>
 }
 
 
-inputs.forEach((input) => input.addEventListener("focus", handleFocus));
-inputs.forEach((input) => input.addEventListener("focusout", handleOutFocus));
-inputs.forEach((input) => input.addEventListener("input", handleChange));
+inputs.forEach((input) => input.addEventListener("focus", focando));
+inputs.forEach((input) => input.addEventListener("focusout", retirandoFoco));
+inputs.forEach((input) => input.addEventListener("input", valoresAtendidos));
